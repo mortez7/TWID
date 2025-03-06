@@ -510,6 +510,83 @@ html {
   margin-top: 3.25rem;
 }
 
+.reviews {
+  position: relative;
+  z-index: 10;
+  margin-top: -145px;
+  margin-bottom: 240px;
+}
+
+.reviews-wrapper {
+  background-color: #d9dcde;
+  padding-top: 1.3125rem;
+  padding-bottom: 1.75rem;
+  height: 31.8125rem;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.reviews-line {
+  margin: auto;
+  height: 6px;
+  max-width: 98%;
+  background: linear-gradient(0deg, #295b74, #295b74), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.review {
+  /* width: 20.125rem; */
+  position: relative;
+  padding-left: 1.5625rem;
+  flex: 0 0 20.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 3.125rem;
+}
+
+.review::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 26rem;
+  background-image: linear-gradient(to bottom, #ffffff -0.84%, rgba(255, 255, 255, 0) 100%);
+}
+
+.review-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 133%;
+  color: #002532;
+  margin: 0;
+}
+
+.review-autor-avatar {
+  width: 4.0625rem;
+  height: 4.0625rem;
+  border: 1px solid #f58332;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 60%;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.review-autor-name {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 133%;
+  color: #002532;
+}
+
 @media (max-width: 1360px) {
   html {
     font-size: 15px;
@@ -781,6 +858,10 @@ html {
     height: 33px;
     width: 33px;
   }
+
+  .reviews {
+    margin-top: -3px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -914,5 +995,36 @@ html {
 
   .travel-socials {
     bottom: -242px;
+  }
+
+  .reviews-wrapper {
+    height: 306px;
+    padding-bottom: 15px;
+  }
+
+  .review {
+    width: auto;
+    padding-right: 30px;
+    padding-left: 15px;
+    flex: 0 0 auto;
+  }
+
+  .review-text {
+    font-size: 14px;
+    max-width: 250px;
+  }
+
+  .review-autor-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+
+  .review-autor-name {
+    font-size: 14px;
+  }
+
+  .reviews-line {
+    max-width: 95%;
   }
 }
