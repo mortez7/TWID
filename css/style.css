@@ -587,10 +587,10 @@ html {
 }
 
 .iteneraries {
+  z-index: 10;
+  position: relative;
 }
 
-.iteneraries-title {
-}
 .iteneraries-wrapper {
   position: relative;
   margin-top: 1.6875rem;
@@ -672,6 +672,140 @@ html {
   margin-top: 28px;
 }
 
+.footer-main {
+  margin-top: -16.4375rem;
+  z-index: -10;
+}
+
+.footer-separator {
+  width: 100%;
+  height: 24.0625rem;
+  background-color: #d9dcde;
+  background-image: url(../img/noise.png);
+  clip-path: polygon(50% 13%, 70% 11%, 85% 7%, 100% 0, 100% 100%, 0 100%, 0 0, 15% 7%, 30% 11%);
+  z-index: -10;
+}
+
+.footer-title {
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 100;
+  font-size: 5.8125rem;
+  color: #a5aaad;
+  letter-spacing: 3.8944rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  height: 8.75rem;
+  background-color: #a5aaad;
+  border-bottom: 10px solid #f4472b;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  margin-right: 1.4375rem;
+}
+
+.footer-stores-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.footer-market-icon {
+  height: 29px;
+  width: 99px;
+}
+
+.footer-logos-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.porsche-icon {
+  width: 144px;
+  height: 10px;
+}
+
+.audi-icon {
+  width: 39px;
+  height: 24px;
+}
+
+.bmw-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.alfa-romeo-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.alpine-icon {
+  width: 109px;
+  height: 10px;
+}
+
+.footer-logos-text {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-size: 1rem;
+  line-height: 100%;
+  color: #ffffff;
+  font-weight: 300;
+  position: relative;
+  margin-right: 3.125rem;
+}
+
+.footer-logos-text::after {
+  content: "";
+  width: 1px;
+  height: 2.5rem;
+  background-color: #ffffff;
+  position: absolute;
+  right: -24px;
+  top: -12px;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.footer-socials-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-date {
+  font-family: "Inter";
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 120%;
+  color: #002532;
+}
+
+@media (max-width: 1865px) {
+  .footer-title {
+    letter-spacing: 2.8944rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .footer-title {
+    letter-spacing: 1.8944rem;
+  }
+}
+
 @media (max-width: 1360px) {
   html {
     font-size: 15px;
@@ -690,6 +824,14 @@ html {
   .header-social-icon {
     height: 4.2rem;
     width: 3.7rem;
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+
+  .footer-title {
+    font-size: 3.8125rem;
   }
 }
 
@@ -752,6 +894,16 @@ html {
 
   .header-socials-wrapper {
     display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .footer-socials {
+    display: none;
+  }
+
+  .footer-title {
+    font-size: 40px;
   }
 }
 
@@ -966,6 +1118,40 @@ html {
 
   .iteneraries-button {
     display: flex;
+  }
+
+  .footer-separator {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: 20px;
+  }
+
+  .footer-main {
+    margin-top: 30px;
+    row-gap: 10px;
+  }
+
+  .footer-bottom {
+    padding: 20px 48px;
+    height: auto;
+  }
+
+  .footer-title {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    letter-spacing: 13.4px;
+  }
+
+  .footer-logos-text {
+    margin-right: 10px;
+  }
+
+  .footer-logos-text::after {
+    display: none;
+  }
+
+  .footer-logos {
+    flex-wrap: wrap;
   }
 }
 
@@ -1193,5 +1379,128 @@ html {
 
   .iteneraries-description-text {
     font-size: 14px;
+  }
+
+  .footer-main {
+    margin-top: 100px;
+  }
+
+  .footer-bottom {
+    justify-content: space-between;
+  }
+
+  .footer-stores-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    gap: 52px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .footer-stores {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footer-market-icon {
+    height: 43px;
+    width: 152px;
+  }
+
+  .footer-logos-wrapper {
+    flex-direction: column;
+    margin-top: 46px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    width: 178px;
+    height: 38px;
+    margin: 0;
+  }
+
+  .footer-logos-text {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .porsche-icon {
+    width: 144px;
+    height: 10px;
+  }
+
+  .alpine-icon {
+    width: 139px;
+    height: 12px;
+  }
+
+  .bmw-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .alfa-romeo-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .audi-icon {
+    width: 69px;
+    height: 40px;
+  }
+
+  .footer-logos {
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 82px;
+  }
+
+  .porsche {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .alpine {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .bmw {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .audi {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .alfa-romeo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-socials-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-date {
+    font-size: 20px;
   }
 }
