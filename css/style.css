@@ -44,6 +44,10 @@ html {
   gap: 1.8125rem;
 }
 
+.header-logo-link {
+  display: flex;
+}
+
 .header-logo {
   width: 9.375rem;
 }
@@ -100,6 +104,7 @@ html {
   margin: 0 0.5rem 0 0.5rem;
   font-weight: 300;
   color: #ffffff;
+  font-family: "Inter";
 }
 
 .lang-link-active {
@@ -721,6 +726,11 @@ html {
 .footer-market-icon {
   height: 29px;
   width: 99px;
+  fill: #ffffff;
+}
+
+.footer-stores-link:hover .footer-market-icon {
+  fill: #f4472b;
 }
 
 .footer-logos-wrapper {
@@ -792,6 +802,125 @@ html {
   font-size: 1.25rem;
   line-height: 120%;
   color: #002532;
+}
+
+.register {
+  background-color: #a5aaad;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.register-header {
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #001116;
+  position: relative;
+}
+
+.register-title {
+  font-family: "Metal";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3.125rem;
+  letter-spacing: 0.0938rem;
+  margin-left: 2.8125rem;
+}
+
+.register-lang-links {
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  height: 100%;
+  width: 11.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3.375rem;
+}
+
+.register-main {
+  padding-top: 14.375rem;
+  padding-bottom: 12.6875rem;
+  display: flex;
+  justify-content: center;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+.form-input {
+  max-width: 36.25rem;
+  height: 3.0625rem;
+  border: 1px solid #001116;
+  border-radius: 10px;
+  background-color: #a5aaad;
+  font-family: "Metal";
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #002532;
+  text-align: center;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: #001116;
+}
+.register-password-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 100%;
+  text-align: center;
+  color: #002532;
+}
+
+.safe-password-link {
+  text-decoration: underline;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 100%;
+  color: #002532;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+.form-button {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 133%;
+  color: #002532;
+  border: 1px solid #f4472b;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 1.125rem 5.9375rem;
+  max-width: 17.5rem;
+  cursor: pointer;
+}
+
+.noise-footer {
+  height: 8.75rem;
+  background-image: url(../img/noise.png);
+  background-color: #a5aaad;
+  border-bottom: 10px solid #f4472b;
 }
 
 @media (max-width: 1865px) {
@@ -1502,5 +1631,67 @@ html {
 
   .footer-date {
     font-size: 20px;
+  }
+
+  .register-header {
+    align-items: center;
+    border-top: 5px solid #f4472b;
+    height: 70px;
+  }
+
+  .register-lang-links {
+    left: 0;
+    font-size: 14px;
+  }
+
+  .register-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    margin: 0;
+    font-size: 40px;
+  }
+
+  .register-main {
+    padding: 146px 15px 60px 15px;
+  }
+
+  .register-form {
+    width: 100%;
+  }
+
+  .input-group {
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+
+  .form-input {
+    width: 100%;
+    height: 49px;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  .register-password-text {
+    font-size: 12px;
+    max-width: 355px;
+  }
+
+  .safe-password-link {
+    margin-top: 28px;
+    font-size: 12px;
+  }
+
+  .form-button {
+    margin-top: 173px;
+    height: 60px;
+    min-width: 280px;
+    padding: 18px 96px;
+    font-size: 18px;
+  }
+
+  .noise-footer {
+    height: 80px;
   }
 }
