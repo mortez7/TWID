@@ -1038,6 +1038,77 @@ html {
   background-color: #f4472b;
 }
 
+.new-iteneraries {
+  margin-top: 5.9375rem;
+  margin-bottom: 3.75rem;
+}
+
+.new-iteneraries-title {
+  max-width: 56.6875rem;
+  margin-bottom: 1.9375rem;
+}
+
+.new-iteneraries-subtitle {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 133%;
+  color: #295b74;
+}
+
+.new-iteneraries-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+  margin-top: 5.625rem;
+}
+
+.new-iteneraries-card {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.iteneraries-card-wrapper {
+  border-bottom: 1px solid #a5aaad;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.25rem;
+}
+
+.iteneraries-card-title {
+  font-family: "Metal";
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 60%;
+  margin-bottom: 1.4375rem;
+  margin-top: 0;
+  color: #002532;
+}
+
+.iteneraries-card-description {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 133%;
+  color: #002532;
+}
+
+.iteneraries-card-date {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 133%;
+  color: #002532;
+  margin-top: auto;
+}
+
+.iteneraries-card-image {
+  max-width: 36.25rem;
+  max-height: 16.25rem;
+  margin-top: auto;
+  object-fit: cover;
+}
+
 @media (max-width: 1865px) {
   .footer-title {
     letter-spacing: 2.8944rem;
@@ -1117,6 +1188,10 @@ html {
   .agregate-title {
     font-size: 4.7rem;
     text-align: center;
+  }
+
+  .iteneraries-card-image {
+    max-width: 33rem;
   }
 }
 
@@ -1437,6 +1512,30 @@ html {
 
   .custom-journey-description {
     padding: 0 0.1875rem 1.25rem 1.4375rem;
+  }
+
+  .new-iteneraries-title {
+    margin-left: 15px;
+  }
+
+  .new-iteneraries-subtitle {
+    margin-left: 15px;
+  }
+
+  .iteneraries-card-wrapper {
+    padding: 0 16px 15px 15px;
+    border-bottom: none;
+  }
+
+  .new-iteneraries-card {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .iteneraries-card-image {
+    max-width: none;
+    width: 100%;
+    max-height: 250px;
   }
 }
 
@@ -1888,6 +1987,46 @@ html {
 
   .email-link {
     font-size: 14px;
+  }
+
+  .new-iteneraries {
+    margin-top: 44px;
+  }
+
+  .new-iteneraries-title {
+    margin-bottom: 13px;
+    font-size: 40px;
+  }
+
+  .new-iteneraries-subtitle {
+    margin-top: 13px;
+    margin-bottom: 26px;
+    font-size: 14px;
+    max-width: 359px;
+  }
+
+  .new-iteneraries-wrapper {
+    margin-top: 26px;
+    gap: 30px;
+  }
+
+  .iteneraries-card-title {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .iteneraries-card-description {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 21px;
+  }
+
+  .iteneraries-card-date {
+    font-size: 14px;
+  }
+
+  .iteneraries-card-image {
+    height: 250px;
   }
 }
 
